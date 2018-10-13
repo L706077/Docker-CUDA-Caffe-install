@@ -74,6 +74,9 @@ or
 $ sudo nvidia-docker run -it bvlc/caffe:gpu
 
 ```
+```C++
+＄ sudo nvidia-docker run -ti caffe:gpu bash -c "cd /opt/caffe/build; make runtest"
+```
 
 ```C++
 $ cd /opt/caffe
