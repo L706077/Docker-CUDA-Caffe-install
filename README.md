@@ -85,3 +85,8 @@ $ sh example/mnist/create_mnist.sh
 $ sh example/mnist/train_lenet.sh
 ```
 
+### share local data to container 
+```C++
+$ sudo docker run -it -v /home/ubuntu/workspace/XXX:/share bvlc/caffe:gpu /bin/bash
+```
+
