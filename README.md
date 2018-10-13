@@ -26,7 +26,7 @@ $ sudo docker run hello-world
 
 ### Test whether install successfully or not 
 ```C++
-docker info 
+$ docker info 
 ```
 
 ### Delete docker
@@ -66,4 +66,19 @@ than you can see the result as same as "$ nvidia-smi" <br/>
 $ nvidia-docker run -ti bvlc/caffe:gpu caffe --version 
 ```
 
+### run caffe example
+```C++
+$ sudo nvidia-docker run -t -i bvlc/caffe:gpu /bin/bash 
+
+or 
+$ sudo nvidia-docker run -it bvlc/caffe:gpu
+
+```
+
+```C++
+$ cd /opt/caffe
+$ sh data/mnist/get_mnist.sh
+$ sh example/mnist/create_mnist.sh
+$ sh example/mnist/train_lenet.sh
+```
 
